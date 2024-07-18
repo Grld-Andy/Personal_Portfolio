@@ -133,6 +133,7 @@ a{
 }
 .hero .grid .col #prof{
   font-weight: 600;
+  height: 25px;
   color: var(--font_light_color);
 }
 .links1{
