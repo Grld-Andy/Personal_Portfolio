@@ -5,7 +5,7 @@ import Experience from './components/Experience/Experience';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import { FaLinkedin, FaGithub} from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaTwitter} from 'react-icons/fa';
 
 
 function App() {
@@ -49,12 +49,16 @@ function App() {
               <h1>Andy Ansong</h1>
               <p id='prof'>Web Developer | Programmer</p>
               <div className='links1'>
-                <a href="https://www.linkedin.com/in/andy-ansong-b661b8232" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/andy-ansong-780a4b317" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin size={30} />
                 </a>
                 <div className='space'></div>
-                <a href="https://github.com/AndyGrld" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Grld-Andy" target="_blank" rel="noopener noreferrer">
                   <FaGithub size={30} />
+                </a>
+                <div className='space'></div>
+                <a href="https://twitter.com/Gerald_Codez" target="_blank" rel="noopener noreferrer">
+                  <FaTwitter size={30} />
                 </a>
               </div>
             </div>
