@@ -1,15 +1,21 @@
 #contact {
-    background-color: var(--bg_color);
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  #contact h2 {
-    font-size: var(--section_header_size);
-    margin-bottom: 20px;
-  }
-  
-  #contact p {
-    font-size: 1.25rem;
-    color: var(--font_opp_color);
-  }
+  background-color: var(--bg_color);
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: var(--section_header_size);
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.25rem;
+  color: var(--font_opp_color);
+}
+#contact p a{
+  transition: 0s linear;
+}
+#contact p a:hover{
+  text-decoration: underline;
+}

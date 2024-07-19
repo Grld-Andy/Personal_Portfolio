@@ -29,6 +29,7 @@ const Experience = () => {
                         <p><FaStar size={icon_size}/>DJANGO</p>
                         <p><FaStar size={icon_size}/>FLASK</p>
                         <p><FaStar size={icon_size}/>PHP</p>
+                        <p><FaStar size={icon_size}/>NODE</p>
                 </div>
             </div>
             <div className='e_cell'>
