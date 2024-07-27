@@ -73,11 +73,13 @@ function App() {
         <div className='hero'>
           <div className='grid'>
             <div className='col'>
-              <div className='lottie'>
-                <Lottie
-                  options={defaultOptions}
-                  height={400}
-                  width={400}/>
+              <div className='circle'>
+                <div className='lottie'>
+                  <Lottie
+                    options={defaultOptions}
+                    height={400}
+                    width={400}/>
+                </div>
               </div>
             </div>
             <div className='col'>

@@ -96,20 +96,16 @@ a{
   width: 100vw;
   height: calc(100vh - 60px);
   align-items: center;
-  justify-content: center;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  height: inherit;
-  width: inherit; */
 }
 .hero .grid{
-  display: grid;
+  display: flex;
+  width: 100%;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
+  gap: 50px;
   align-items: center;
 }
-.hero .grid .col:first-child{
+.hero .grid .col .circle{
   width: 270px;
   height: 270px;
   overflow: hidden;
@@ -120,14 +116,20 @@ a{
   position: relative;
   bottom: 100px;
 }
-/* .hero .grid img{
-  width: inherit;
-  height: inherit;
-  background-color: var(--bg_color_2);
-} */
 .hero .grid .col{
   text-align: center;
   font-size: 1.1em;
+}
+.hero .grid .col{
+  h1{
+    font-size: 2.7em;
+  }
+  p{
+    font-size: 2em;
+  }
+  #prof{
+    font-size: 1.5em;
+  }
 }
 .hero .grid .col p{
   font-weight: 400;
@@ -152,5 +154,12 @@ a{
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
+    gap: 0;
+  }
+  .hero .grid .col:first-child{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

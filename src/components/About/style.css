@@ -44,11 +44,14 @@
     .a_grid{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
     }
     #a_header{
         position: relative;
         top: 2vh;
         margin: 0;
+    }
+    .a_grid .a_col p{
+        padding: 30px;
+        text-align: justify;
     }
 }
