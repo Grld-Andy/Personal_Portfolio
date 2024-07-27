@@ -27,7 +27,7 @@
     padding: 30px;
 }
 .a_grid .a_col{
-    margin: 20px;
+    margin: 0 20px;
     font-size: 1.2rem;
 }
 .a_grid .a_col:first-child{
@@ -40,15 +40,11 @@
     box-shadow: 0 0 4px var(--font_color);
     background-color: var(--bg_color_2);
 }
-@media (max-width: 675px){
+@media (max-width: 720px){
     .a_grid{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-    }
-    .a_grid .a_col img{
-        width: 200px;
-        height: 260px
     }
     #a_header{
         position: relative;

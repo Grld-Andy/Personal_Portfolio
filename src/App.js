@@ -7,6 +7,9 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import { FaLinkedin, FaGithub, FaTwitter} from 'react-icons/fa';
 import Typed from 'typed.js';
+import Lottie from 'react-lottie';
+import dudeAnimationLight from './lotties/dude_coding_light.json'
+import dudeAnimationDark from './lotties/dude_coding_dark.json'
 
 
 function App() {
@@ -31,6 +34,16 @@ function App() {
       typed.destroy()
     }
   }, [])
+
+  const animation = mode === 'light_mode'? dudeAnimationLight : dudeAnimationDark;
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  }
 
   const changeTheme = () => {
     if (mode === 'light_mode'){
@@ -60,7 +73,12 @@ function App() {
         <div className='hero'>
           <div className='grid'>
             <div className='col'>
-              <img src='face.png' alt='my profile'/>
+              <div className='lottie'>
+                <Lottie
+                  options={defaultOptions}
+                  height={400}
+                  width={400}/>
+              </div>
             </div>
             <div className='col'>
               <p id='greeting'>Hi, I'm</p>

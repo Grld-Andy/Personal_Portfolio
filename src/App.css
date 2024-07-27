@@ -109,21 +109,22 @@ a{
   justify-content: center;
   align-items: center;
 }
-.hero .grid .col{
-  margin: 10px;
-}
 .hero .grid .col:first-child{
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
   overflow: hidden;
   border-radius: 50%;
   box-shadow: 0 0 4px var(--font_color);
 }
-.hero .grid img{
+.hero .grid .lottie{
+  position: relative;
+  bottom: 100px;
+}
+/* .hero .grid img{
   width: inherit;
   height: inherit;
   background-color: var(--bg_color_2);
-}
+} */
 .hero .grid .col{
   text-align: center;
   font-size: 1.1em;
