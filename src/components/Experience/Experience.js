@@ -46,10 +46,10 @@ const Experience = () => {
                 <div className='content'>
                         <p><FaStar size={icon_size}/>GIT</p>
                         <p><FaStar size={icon_size}/>BLENDER</p>
-                        <p><FaStar size={icon_size}/>VS CODE</p>
-                        <p><FaStar size={icon_size}/>PYCHARM</p>
-                        <p><FaStar size={icon_size}/>NPM</p>
-                        <p><FaStar size={icon_size}/>PIP</p>
+                        <p><FaStar size={icon_size}/>AZURE DEVOPS</p>
+                        <p><FaStar size={icon_size}/>AZURE STORAGE EXPLORER</p>
+                        <p><FaStar size={icon_size}/>DOCKER</p>
+                        <p><FaStar size={icon_size}/>ANDROID STUDIO</p>
                 </div>
             </div>
         </div>

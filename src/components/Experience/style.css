@@ -24,13 +24,17 @@
     margin: 10px 5px;
     font-size: 14px;
     text-align: center;
-    height: 200px;
+    height: min(100%, 230px);
     border: 1px solid var(--font_color);
 }
 .e_cell .content{
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: justify;
+}
+.e_cell .content svg{
+    position: relative;
+    right: 2px;
 }
 .e_cell .content p{
     font-size: 18px;
