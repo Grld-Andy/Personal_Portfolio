@@ -87,7 +87,7 @@ function App() {
               <h1>Andy Ansong</h1>
               <p id='prof' ref={el}></p>
               <div className='links1'>
-                <a href="https://www.linkedin.com/in/andy-ansong-780a4b317" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/andy-ansong-gerald" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin size={30} />
                 </a>
                 <div className='space'></div>
