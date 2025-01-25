@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Projects = () => {
+const Projects: React.FC = () => {
   return (
-    <div>Projects</div>
+    <div id='#projects' className='w-full'>
+      <h1>Projects</h1>
+      <div></div>
+    </div>
   )
 }
 

@@ -2,9 +2,9 @@ export const background_mask = {
     "autoPlay": true,
     "background": {
       "color": {
-        "value": "#ffffff"
+        "value": "#000000"
       },
-      "image": "url('https://particles.js.org/images/background3.jpg')",
+      "image": "url('/public/images/hero-bg1.png')",
       "position": "50% 50%",
       "repeat": "no-repeat",
       "size": "cover",
@@ -16,9 +16,9 @@ export const background_mask = {
         "opacity": 1,
         "color": {
           "value": {
-            "r": 255,
-            "g": 255,
-            "b": 255
+            "r": 10,
+            "g": 10,
+            "b": 10
           }
         }
       },

@@ -2,7 +2,7 @@ export const connect = {
   autoPlay: true,
   background: {
     color: {
-      value: "#eee",
+      value: "#111",
     },
     image: "",
     position: "50% 50%",

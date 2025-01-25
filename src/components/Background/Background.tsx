@@ -3,6 +3,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import { particles } from "../constants/particles";
 import { connect } from "../../constants/connect";
+import { background_mask } from "../../constants/background-mask";
 
 const Background = () => {
   const [init, setInit] = useState(false);
@@ -26,7 +27,7 @@ const Background = () => {
     console.log(container);
   };
 
-  const options = useMemo(() => connect, []);
+  const options = useMemo(() => background_mask, []);
 
   if (init) {
     return (

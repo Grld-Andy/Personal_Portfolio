@@ -8,13 +8,13 @@ import Skills1 from './components/Sections/Skills/Skills1'
 function App() {
 
   return (
-    <>
+    <div className="bg-[#111] text-white scroll-smooth">
       <Navbar1/>
       <Hero1/>
       <Skills1/>
       <Projects1/>
       <Experience1/>
-    </>
+    </div>
   )
 }
 
