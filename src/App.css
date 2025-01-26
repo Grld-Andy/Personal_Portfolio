@@ -1,25 +1,26 @@
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} */
-
-@font-face {
-    font-family: 'Smooth Sans';
-    src: url('./assets/fonts/Smooch_Sans/SmoochSans-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Rubik';
-    src: url('./assets/fonts/Rubik\,Smooch_Sans/Rubik/Rubik-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
-.smooth-sans{
-    font-family: 'Smooth Sans';
+@font-face {
+  font-family: "Smooth Sans";
+  src: url("./assets/fonts/Smooch_Sans/SmoochSans-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-.rubik{
-    font-family: 'Rubik';
+@font-face {
+  font-family: "Rubik";
+  src: url("./assets/fonts/Rubik\,Smooch_Sans/Rubik/Rubik-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.smooth-sans {
+  font-family: "Smooth Sans";
+}
+.rubik {
+  font-family: "Rubik";
 }
