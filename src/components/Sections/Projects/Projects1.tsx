@@ -26,7 +26,18 @@ const Projects: React.FC = () => {
                 Quaerat, fugiat.
               </p>
             </div>
-            <div></div>
+            <div className="flex gap-2 flex-wrap mt-2">
+              {project.github && (
+                <a href={project.github} target="_blank">
+                  Github link
+                </a>
+              )}
+              {project.website && (
+                <a href={project.website} target="_blank">
+                  Website link
+                </a>
+              )}
+            </div>
           </div>
         ))}
       </div>

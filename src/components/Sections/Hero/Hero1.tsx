@@ -1,12 +1,8 @@
 import React from "react";
-import Background from "../../Background/Background";
 
 const Hero1: React.FC = () => {
   return (
     <>
-      <div className="absolute z-[-1] h-screen border">
-        <Background />
-      </div>
       <section
         id="intro"
         className="relative px-4 h-[calc(100vh)] grid place-items-center"
