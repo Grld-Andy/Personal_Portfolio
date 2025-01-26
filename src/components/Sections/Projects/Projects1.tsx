@@ -9,12 +9,12 @@ const Projects: React.FC = () => {
       </div>
       <div className="my-5 md:px-10 px-5 grid md:grid-cols-3 grid-cols-2 gap-5 gap-y-12 items-center justify-center">
         {projects.map((project, index) => (
-          <div key={index} className="w-full h-[300px]">
+          <div key={index} className="w-full h-full">
             <div className="relative w-full overflow-hidden">
               <img
                 src={project.image}
                 alt={project.name}
-                className="object-cover w-full h-[200px] md:h-[230px] hover:scale-110 transition-all duration-300"
+                className="object-cover object-center w-full h-[200px] md:h-[230px] hover:scale-110 transition-all duration-300"
               />
             </div>
             <div className="mt-2 flex flex-col gap-3">
@@ -26,6 +26,7 @@ const Projects: React.FC = () => {
                 Quaerat, fugiat.
               </p>
             </div>
+            <div></div>
           </div>
         ))}
       </div>

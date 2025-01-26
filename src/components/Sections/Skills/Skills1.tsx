@@ -3,10 +3,10 @@ import { skills } from "../../../constants/skills";
 
 const Skills: React.FC = () => {
   return (
-    <div id="skills" className="grid grid-cols-2 md:px-10 px-5 py-5">
+    <div id="skills" className="grid gap-5 sm:grid-cols-2 md:px-10 px-5 py-5">
       <div>
         <h1 className="text-3xl font-semibold leading-8 mb-4">
-          The Technologies that I work with
+          The technologies that I work with
         </h1>
         <p className="font-light">
           Here is a list of the technologies, languages, libraries, frameworks
