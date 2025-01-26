@@ -1,44 +1,16 @@
 import React from "react";
 import { projects } from "../../../constants/projects";
+import ProjectCard from "../../ProjectCard";
 
 const Projects: React.FC = () => {
   return (
     <div id="projects" className="w-full">
       <div className="text-center my-10">
-        <h1 className="text-5xl font-bold leading-8 mb-4">My Projects</h1>
+        <h1 className="text-3xl font-bold leading-8">My Projects</h1>
       </div>
       <div className="my-5 md:px-10 px-5 grid md:grid-cols-3 grid-cols-2 gap-5 gap-y-12 items-center justify-center">
         {projects.map((project, index) => (
-          <div key={index} className="w-full h-full">
-            <div className="relative w-full overflow-hidden">
-              <img
-                src={project.image}
-                alt={project.name}
-                className="object-cover object-center w-full h-[200px] md:h-[230px] hover:scale-110 transition-all duration-300"
-              />
-            </div>
-            <div className="mt-2 flex flex-col gap-3">
-              <h1 className="text-[1.3em] font-semibold leading-[1em]">
-                {project.name}
-              </h1>
-              <p className="text-[#aaa] leading-[1em]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat, fugiat.
-              </p>
-            </div>
-            <div className="flex gap-2 flex-wrap mt-2">
-              {project.github && (
-                <a href={project.github} target="_blank">
-                  Github link
-                </a>
-              )}
-              {project.website && (
-                <a href={project.website} target="_blank">
-                  Website link
-                </a>
-              )}
-            </div>
-          </div>
+          <ProjectCard project={project} key={index} />
         ))}
       </div>
     </div>
