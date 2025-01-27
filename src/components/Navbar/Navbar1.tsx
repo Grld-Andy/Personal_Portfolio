@@ -22,9 +22,10 @@ const Navbar1: React.FC = () => {
       </div>
       <div className="flex gap-3">
         <a href="#intro">Intro</a>
-        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#about-me">About_Me</a>
       </div>
       <div>
         <a href="#contact-me">

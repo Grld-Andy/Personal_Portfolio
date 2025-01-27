@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const Experience = () => {
+const Experience: React.FC = () => {
   return (
-    <div>Experience</div>
-  )
-}
+    <div id="experience" className="w-full">
+      <div className="text-center my-10">
+        <h1 className="text-3xl font-bold leading-8">My Projects</h1>
+      </div>
+    </div>
+  );
+};
 
-export default Experience
+export default Experience;
