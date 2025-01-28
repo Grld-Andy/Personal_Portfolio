@@ -24,3 +24,12 @@
 .rubik {
   font-family: "Rubik";
 }
+.to-left {
+  grid-column: 1/2;
+}
+.to-middel {
+  grid-column: 2/3;
+}
+.to-right {
+  grid-column: 3/4;
+}
