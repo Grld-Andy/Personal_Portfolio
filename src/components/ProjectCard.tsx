@@ -12,7 +12,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         <img
           src={project.image}
           alt={project.name}
-          className="object-cover object-center w-full h-[200px] md:h-[230px] hover:scale-110 transition-all duration-300"
+          className="object-cover object-center w-full h-[150px] md:h-[230px] lg:h-[180px] hover:scale-110 transition-all duration-300"
         />
         <div className="absolute top-0 bottom-0 w-full h-full bg-gradient-to-t from-[#0009] to-transparent hover:bg-[#0006] transition-all duration-300"></div>
         <div className="absolute bottom-0 left-0 flex p-2">
