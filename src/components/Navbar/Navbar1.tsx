@@ -6,7 +6,7 @@ const Navbar1: React.FC = () => {
       className={`z-10 shadow-md shadow-[#fff3] smooth-sans text-[1.3em] font-medium text-white bg-linear-to-t from-[#fff3]
     to-[#fff1] fixed flex items-center justify-between rounded-full p-5 sm:px-10 md:px-16 w-[calc(100%-20px)] mx-[10px] my-5 backdrop-blur-sm`}
     >
-      <div className="relative h-[30px] w-[30px] scale-110 rubik">
+      <div className="relative h-[30px] hidden sm:flex w-[30px] scale-110 rubik">
         <div className="absolute left-[0px] bg-red-500 w-[25px] h-[25px] rounded-full flex items-center justify-center hover:scale-125 transition-all duration-200 cursor-default">
           <span className="relative bottom-[2px]">a</span>
         </div>
@@ -20,7 +20,7 @@ const Navbar1: React.FC = () => {
           <span className="relative bottom-[3px]">y</span>
         </div>
       </div>
-      <div className="flex gap-3">
+      <div className="flex gap-1 sm:gap-3">
         <a href="#intro">Intro</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
