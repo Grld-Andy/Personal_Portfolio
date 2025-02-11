@@ -2,6 +2,7 @@ import React from "react";
 import Lottie from "react-lottie";
 import webDev from "../../../assets/lotties/computers_and_phone.json";
 import BlurText from "../../ui/BlurText/BlurText";
+import { motion } from "framer-motion";
 
 const Hero1: React.FC = () => {
   const defaultOptions = {
@@ -22,14 +23,14 @@ const Hero1: React.FC = () => {
         <div className="flex flex-col gap-10 items-center">
           <div className="flex font-bold text-5xl">
             <BlurText
-              text="Hi, I'm Andy"
+              text="Hi, I'm Andy "
               delay={150}
               animateBy="words"
               direction="top"
             />
             <span>👋</span>
           </div>
-          <div className="text-[#333] text-[18px]">
+          <motion.div className="text-[#333] text-[18px]">
             <p className="">
               Just another{" "}
               <span className="font-bold text-blue-500">
@@ -39,7 +40,7 @@ const Hero1: React.FC = () => {
               Currently in School🎓
             </p>
             <p>Welcome to my portfolio.</p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex items-center justify-center">
           <Lottie options={defaultOptions} height={400} width={400} />

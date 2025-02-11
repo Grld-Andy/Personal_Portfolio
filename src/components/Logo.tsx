@@ -2,7 +2,7 @@ import React from "react";
 
 const Logo: React.FC = () => {
   return (
-    <div className="relative h-[30px] text-white hidden sm:flex w-[30px] scale-110 rubik">
+    <div className="relative h-[30px] text-white hidden sm:flex w-[30px] oregano scale-110">
       <div className="absolute left-[0px] bg-red-500 w-[25px] h-[25px] rounded-full flex items-center justify-center hover:scale-125 transition-all duration-200 cursor-default">
         <span className="relative bottom-[2px]">a</span>
       </div>

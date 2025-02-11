@@ -5,7 +5,11 @@ interface Props {
 }
 
 const SectionHeader: React.FC<Props> = ({ text }) => {
-  return <h1 className="text-xl font-semibold mb-3 uppercase">{text}</h1>;
+  return (
+    <h1 className="text-sm oregano text-blue-900 font-semibold mb-3 uppercase">
+      {text}
+    </h1>
+  );
 };
 
 export default SectionHeader;

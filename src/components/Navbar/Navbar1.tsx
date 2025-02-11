@@ -1,10 +1,11 @@
 import React from "react";
 import Logo from "../Logo";
+import { motion } from "framer-motion";
 
 const Navbar1: React.FC = () => {
   return (
-    <nav
-      className={`z-10 shadow-md shadow-[#fff3] text-[1.3em] font-medium bg-white
+    <motion.nav
+      className={`z-10 shadow-md text-[1.3em] font-medium bg-white
         flex justify-between py-5 px-5 items-center text-black`}
     >
       <Logo />
@@ -17,7 +18,7 @@ const Navbar1: React.FC = () => {
           <a href="#about-me">About_Me</a>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

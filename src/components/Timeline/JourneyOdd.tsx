@@ -4,7 +4,7 @@ const JourneyOdd: React.FC = () => {
   return (
     <>
       <div className="flex justify-end">
-        <div className="max-w-[400px]">
+        <div className="max-w-[400px] pt-5">
           <h1 className="font-semibold text-2xl pr-3">Journey Point</h1>
           <p className="pr-5 text-right text-[0.9em]">
             {new Date().toUTCString()}

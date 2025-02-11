@@ -2,16 +2,18 @@ import React from "react";
 import { projects } from "../../../constants/projects";
 import ProjectCard from "../../ui/ProjectCard";
 import SectionHeader from "../../ui/SectionHeader";
+import SectionSubHeader from "../../ui/SectionSubHeader";
 
 const Projects: React.FC = () => {
   const buttons = ["All", "Personal", "School", "Work"];
 
   return (
-    <div id="projects" className="w-full bg-[#f7f8fa] text-black px-5 py-3">
+    <div
+      id="projects"
+      className="relative w-full bg-white text-black px-5 py-3 mt-36"
+    >
       <SectionHeader text="MY PROJECTS" />
-      <h2 className="text-4xl font-bold mb-5 libreBaskerville">
-        CREATING USABLE PRODUCTS
-      </h2>
+      <SectionSubHeader text="CREATING USABLE PRODUCTS" />
       <div className="flex justify-end gap-5 mb-5">
         {buttons.map((button, index) => (
           <button
@@ -22,10 +24,13 @@ const Projects: React.FC = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-10">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
+      </div>
+      <div className="absolute w-full left-0 bottom-[-150px]">
+        <img src="/public/svgs/waves1.svg" className="w-full" />
       </div>
     </div>
   );

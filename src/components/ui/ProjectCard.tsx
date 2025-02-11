@@ -1,5 +1,6 @@
 import React from "react";
-import Project from "../types/Project";
+import Project from "../../types/Project";
+import TiltedCard from "./TiltedCard/TiltedCard";
 
 interface Props {
   project: Project;
@@ -8,23 +9,38 @@ interface Props {
 const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
     <div className="w-full h-full">
-      <div className="relative w-full overflow-hidden">
+      <TiltedCard
+        imageSrc={project.image}
+        altText={project.name}
+        captionText={project.name}
+        containerHeight="170px"
+        containerWidth="300px"
+        imageHeight="100%"
+        imageWidth="100%"
+        rotateAmplitude={12}
+        scaleOnHover={1.05}
+        showMobileWarning={false}
+        showTooltip={true}
+        displayOverlayContent={true}
+        overlayContent={
+          <p className="relative top-2 left-2 ">
+            {project.techStack.map((stack, index) => (
+              <img
+                key={index}
+                src={stack}
+                className="w-[30px] h-[30px] cursor-pointer"
+              />
+            ))}
+          </p>
+        }
+      />
+      {/* {project.techStack.map((stack, index) => (
         <img
-          src={project.image}
-          alt={project.name}
-          className="object-cover object-center w-full h-[150px] md:h-[230px] lg:h-[180px] hover:scale-110 transition-all duration-300"
+          key={index}
+          src={stack}
+          className="w-[30px] h-[30px] cursor-pointer"
         />
-        <div className="absolute top-0 bottom-0 w-full h-full bg-gradient-to-t from-[#0009] to-transparent hover:bg-[#0006] transition-all duration-300"></div>
-        <div className="absolute bottom-0 left-0 flex p-2">
-          {project.techStack.map((stack, index) => (
-            <img
-              key={index}
-              src={stack}
-              className="w-[30px] h-[30px] cursor-pointer"
-            />
-          ))}
-        </div>
-      </div>
+      ))} */}
       <div className="mt-2 flex flex-col gap-3">
         <h1 className="text-[1.3em] font-semibold leading-[1em]">
           {project.name}

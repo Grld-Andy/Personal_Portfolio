@@ -24,6 +24,19 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Caveat";
+  src: url("./assets/fonts/Caveat/Caveat-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oregano";
+  src: url("./assets/fonts/Oregano/Oregano-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .rubik {
   font-family: "Rubik", sans-serif;
@@ -33,6 +46,12 @@
 }
 .libreBaskerville {
   font-family: "LibreBaskerville", sans-serif;
+}
+.caveat {
+  font-family: "Caveat", sans-serif;
+}
+.oregano {
+  font-family: "Oregano", sans-serif;
 }
 
 .to-left {
