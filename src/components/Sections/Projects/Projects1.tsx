@@ -1,6 +1,6 @@
 import React from "react";
 import { projects } from "../../../constants/projects";
-import ProjectCard from "../../ProjectCard";
+import ProjectCard from "../../ui/ProjectCard";
 import SectionHeader from "../../ui/SectionHeader";
 
 const Projects: React.FC = () => {
@@ -9,7 +9,9 @@ const Projects: React.FC = () => {
   return (
     <div id="projects" className="w-full bg-[#f7f8fa] text-black px-5 py-3">
       <SectionHeader text="MY PROJECTS" />
-      <h2 className="text-4xl font-bold mb-5">CREATING USABLE PRODUCTS</h2>
+      <h2 className="text-4xl font-bold mb-5 libreBaskerville">
+        CREATING USABLE PRODUCTS
+      </h2>
       <div className="flex justify-end gap-5 mb-5">
         {buttons.map((button, index) => (
           <button

@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Rubik";
-  src: url("./assets/fonts/Rubik\,Smooch_Sans/Rubik/Rubik-VariableFont_wght.ttf")
+  src: url("./assets/fonts/Rubik/Rubik-VariableFont_wght.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -17,12 +17,22 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("./assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .rubik {
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
 }
 .nunito {
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
+}
+.libreBaskerville {
+  font-family: "LibreBaskerville", sans-serif;
 }
 
 .to-left {
@@ -33,4 +43,22 @@
 }
 .to-right {
   grid-column: 3/4;
+}
+
+@keyframes rotateBackForth {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.back-and-forth {
+  display: inline-block;
+  animation: rotateBackForth 2s ease-in-out infinite;
+  animation-delay: 5s;
 }
