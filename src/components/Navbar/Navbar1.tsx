@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 const Navbar1: React.FC = () => {
   return (
     <motion.nav
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
       className={`z-10 shadow-md text-[1.3em] font-medium bg-white
         flex justify-between py-5 px-5 items-center text-black`}
     >

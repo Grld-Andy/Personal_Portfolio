@@ -28,9 +28,25 @@ const Hero1: React.FC = () => {
               animateBy="words"
               direction="top"
             />
-            <span>👋</span>
+            <motion.span
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{
+                opacity: 1,
+                scale: [0, 1, 1, 1],
+                rotate: [0, 0, 45, 0],
+                x: [0, 0, -10, 0],
+              }}
+              transition={{ duration: 0.5, delay: 1.2 }}
+            >
+              👋
+            </motion.span>
           </div>
-          <motion.div className="text-[#333] text-[18px]">
+          <motion.div
+            initial={{ opacity: 0, y: 100, scale: 0.5 }}
+            animate={{ y: 0, opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 1.5 }}
+            className="text-[#333] text-[18px]"
+          >
             <p className="">
               Just another{" "}
               <span className="font-bold text-blue-500">
@@ -43,7 +59,13 @@ const Hero1: React.FC = () => {
           </motion.div>
         </div>
         <div className="flex items-center justify-center">
-          <Lottie options={defaultOptions} height={400} width={400} />
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 2, duration: 0.5 }}
+          >
+            <Lottie options={defaultOptions} height={400} width={400} />
+          </motion.div>
         </div>
         <div className="w-full absolute bottom-[-150px]">
           <img src="/svgs/waves.svg" className="w-full" alt="My Icon" />
