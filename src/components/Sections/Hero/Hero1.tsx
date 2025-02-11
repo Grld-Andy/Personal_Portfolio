@@ -1,46 +1,45 @@
 import React from "react";
+import Lottie from "react-lottie";
+import webDev from "../../../assets/lotties/computers_and_phone.json";
 
 const Hero1: React.FC = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: webDev,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <>
       <section
         id="intro"
-        className="relative px-4 h-[calc(100vh)] grid place-items-center"
+        className="relative w-full grid grid-cols-[repeat(2,1fr)] items-center h-[calc(100vh-130px)] bg-white text-black px-5"
       >
-        <div className="absolute w-full h-screen z-[1]">
-          <div className="absolute w-full h-screen bg-radial from-transparent from-[1%] to-[#111]"></div>
-          <div className="absolute w-full h-screen bg-radial from-transparent from-[1%] to-[#111]"></div>
-          <div className="absolute w-full h-screen bg-radial from-transparent from-[1%] to-[#111]"></div>
-          {/* <div className="absolute w-full h-screen bg-gradient-to-t from-[#111] from-[1%] via-transparent to-transparent"></div> */}
-          <img
-            src="/images/backgrounds/hero-bg1.png"
-            className="w-full h-full object-cover"
-          />
+        <div className="flex flex-col gap-10 items-center">
+          <div className="flex font-bold text-5xl">
+            <h1>Hi, I'm Andy</h1>
+            <span>👋</span>
+          </div>
+          <div className="text-[#333] text-[18px]">
+            <p className="">
+              Just another{" "}
+              <span className="font-bold text-blue-500">
+                computer science student.
+              </span>
+              <br />
+              Currently in School🎓
+            </p>
+            <p>Welcome to my portfolio.</p>
+          </div>
         </div>
-        <div className="flex gap-5 flex-col z-[3]">
-          <div className="text-center">
-            <h1 className="font-extrabold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600">
-              Hi,
-            </h1>
-            <h1 className="font-extrabold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 leading-18">
-              I'm Andy
-            </h1>
-            <h1 className="font-extrabold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600">
-              I build for the WEB
-            </h1>
-          </div>
-          <div className="flex gap-5 text-center items-center justify-center h-[45px] text-white">
-            <button className="relative border-2 border-[#7510F7] rounded-sm h-full w-full font-medium text-[18px] leading-[20px] overflow-hidden group cursor-pointer">
-              <span className="absolute inset-0 bg-[#7510F7] transform scale-x-100 group-hover:scale-x-0 origin-left transition-transform duration-300 ease-in-out"></span>
-              <span className="relative text-white z-10">View my CV</span>
-            </button>
-            <button className="relative border-2 border-[#7510F7] rounded-sm h-full w-full font-medium text-[18px] leading-[20px] overflow-hidden group cursor-pointer">
-              <a href="#projects">
-                <span className="absolute inset-0 bg-[#7510F7] transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-in-out z-5"></span>
-                <span className="relative text-white z-10">Projects</span>
-              </a>
-            </button>
-          </div>
+        <div className="flex items-center justify-center">
+          <Lottie options={defaultOptions} height={400} width={400} />
+        </div>
+        <div className="w-full absolute bottom-[-150px]">
+          <img src="/svgs/waves.svg" className="w-full" alt="My Icon" />
         </div>
       </section>
     </>

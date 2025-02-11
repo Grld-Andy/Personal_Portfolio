@@ -4,26 +4,27 @@
 }
 
 @font-face {
-  font-family: "Smooth Sans";
-  src: url("./assets/fonts/Smooch_Sans/SmoochSans-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "Rubik";
   src: url("./assets/fonts/Rubik\,Smooch_Sans/Rubik/Rubik-VariableFont_wght.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
-.smooth-sans {
-  font-family: "Smooth Sans";
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/Nunito/Nunito-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
+
 .rubik {
   font-family: "Rubik";
 }
+.nunito {
+  font-family: "Nunito";
+}
+
 .to-left {
   grid-column: 1/2;
 }

@@ -34,12 +34,12 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           fugiat.
         </p>
       </div>
-      <div className="flex gap-2 flex-wrap mt-2">
+      <div className="flex gap-1 flex-wrap mt-2 items-center">
         {project.github && (
           <a href={project.github} target="_blank">
             <img
               className="w-[30px] h-[30px]"
-              src="/public/images/icons/html_5_48px.png"
+              src="/images/icons/github-60.png"
               alt={project.name}
             />
           </a>
@@ -47,8 +47,8 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         {project.website && (
           <a href={project.website} target="_blank">
             <img
-              className="w-[30px] h-[30px]"
-              src="/public/images/icons/redis_48px.png"
+              className="w-[25px] h-[25px]"
+              src="/images/icons/website-50.png"
               alt={project.name}
             />
           </a>

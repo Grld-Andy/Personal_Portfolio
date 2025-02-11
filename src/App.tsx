@@ -8,7 +8,7 @@ import Skills1 from "./components/Sections/Skills/Skills1";
 
 function App() {
   return (
-    <div className="bg-[#111] text-white scroll-smooth">
+    <div className="text-white scroll-smooth nunito bg-[#f7f8fa]">
       <Navbar1 />
       <Hero1 />
       <Skills1 />

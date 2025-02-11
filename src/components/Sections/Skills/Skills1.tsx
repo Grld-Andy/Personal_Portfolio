@@ -1,21 +1,13 @@
 import React from "react";
 import { skills } from "../../../constants/skills";
+import SectionHeader from "../../ui/SectionHeader";
 
 const Skills: React.FC = () => {
   return (
-    <div id="skills" className="grid gap-5 sm:grid-cols-2 md:px-10 px-5 py-5">
-      <div>
-        <h1 className="text-3xl font-semibold leading-8 mb-4">
-          The technologies that I work with
-        </h1>
-        <p className="font-light">
-          Here is a list of the technologies, languages, libraries, frameworks
-          and services that I know and wish to offer.
-          <br />I am of course open to working with new technologies to feed my
-          hunger for knowledge.
-        </p>
-      </div>
-      <div className="flex flex-row flex-wrap gap-3 items-center justify-center">
+    <div id="skills" className="w-full bg-[#f7f8fa] text-black px-5 py-3 mt-32">
+      <SectionHeader text="MY SKILLS" />
+      <h2 className="text-4xl font-bold mb-5">VIEW MY TECH STACK</h2>
+      <div className="flex justify-end gap-5 mb-5">
         {skills.map((skill, index) => (
           <div
             title={skill.name}

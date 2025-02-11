@@ -1,26 +1,34 @@
-Smooch Sans Variable Font
-=========================
+Nunito Variable Font
+====================
 
-This download contains Smooch Sans as both a variable font and static fonts.
+This download contains Nunito as both variable fonts and static fonts.
 
-Smooch Sans is a variable font with this axis:
+Nunito is a variable font with this axis:
   wght
 
-This means all the styles are contained in a single file:
-  SmoochSans-VariableFont_wght.ttf
+This means all the styles are contained in these files:
+  Nunito-VariableFont_wght.ttf
+  Nunito-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Smooch Sans:
-  static/SmoochSans-Thin.ttf
-  static/SmoochSans-ExtraLight.ttf
-  static/SmoochSans-Light.ttf
-  static/SmoochSans-Regular.ttf
-  static/SmoochSans-Medium.ttf
-  static/SmoochSans-SemiBold.ttf
-  static/SmoochSans-Bold.ttf
-  static/SmoochSans-ExtraBold.ttf
-  static/SmoochSans-Black.ttf
+in those cases you can use the static font files for Nunito:
+  static/Nunito-ExtraLight.ttf
+  static/Nunito-Light.ttf
+  static/Nunito-Regular.ttf
+  static/Nunito-Medium.ttf
+  static/Nunito-SemiBold.ttf
+  static/Nunito-Bold.ttf
+  static/Nunito-ExtraBold.ttf
+  static/Nunito-Black.ttf
+  static/Nunito-ExtraLightItalic.ttf
+  static/Nunito-LightItalic.ttf
+  static/Nunito-Italic.ttf
+  static/Nunito-MediumItalic.ttf
+  static/Nunito-SemiBoldItalic.ttf
+  static/Nunito-BoldItalic.ttf
+  static/Nunito-ExtraBoldItalic.ttf
+  static/Nunito-BlackItalic.ttf
 
 Get started
 -----------
