@@ -1,6 +1,7 @@
 import React from "react";
 import Lottie from "react-lottie";
 import webDev from "../../../assets/lotties/computers_and_phone.json";
+import BlurText from "../../ui/BlurText/BlurText";
 
 const Hero1: React.FC = () => {
   const defaultOptions = {
@@ -20,7 +21,12 @@ const Hero1: React.FC = () => {
       >
         <div className="flex flex-col gap-10 items-center">
           <div className="flex font-bold text-5xl">
-            <h1>Hi, I'm Andy</h1>
+            <BlurText
+              text="Hi, I'm Andy"
+              delay={150}
+              animateBy="words"
+              direction="top"
+            />
             <span>👋</span>
           </div>
           <div className="text-[#333] text-[18px]">
