@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 
+/* fonts */
 @font-face {
   font-family: "Rubik";
   src: url("./assets/fonts/Rubik/Rubik-VariableFont_wght.ttf")
@@ -64,6 +65,7 @@
   grid-column: 3/4;
 }
 
+/* animations */
 @keyframes rotateBackForth {
   0% {
     transform: rotate(0deg);

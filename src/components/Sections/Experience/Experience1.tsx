@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SectionHeader from "../../ui/SectionHeader";
 import SectionSubHeader from "../../ui/SectionSubHeader";
 import experiences from "../../../constants/experience";
@@ -7,8 +7,6 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { motion } from "framer-motion";
 
 const Experience: React.FC = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
   return (
     <div id="experience" className="w-full text-black mt-30 px-5">
       <SectionHeader text="My Journey" />
@@ -18,19 +16,11 @@ const Experience: React.FC = () => {
           <motion.div
             className="grid grid-cols-[1fr_3px_1fr] gap-3"
             key={index}
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
           >
             <div
               className={`overflow-hidden py-5 px-2 flex items-center justify-end`}
             >
-              <div
-                className={`w-[350px] max-w-[350px] bg-white h-[250px] grid place-items-center transition-all duration-300 ${
-                  hoveredIndex !== null && hoveredIndex !== index
-                    ? "grayscale blur-xs"
-                    : ""
-                }`}
-              >
+              <div className="w-[350px] max-w-[350px] bg-white h-[250px] grid place-items-center">
                 <img className="max-h-[200px]" src={experience.logo} />
               </div>
             </div>

@@ -50,10 +50,6 @@ export const generalSkills: Array<Skill> = [
   { name: "TypeScript", image: "/public/images/icons/typescript-original.svg" },
   { name: "React", image: "/public/images/icons/react-original.svg" },
   { name: "NextJS", image: "/public/images/icons/nextjs-original.svg" },
-  {
-    name: "TailwindCSS",
-    image: "/public/images/icons/tailwindcss-original.svg",
-  },
 
   // Backend
   { name: "NodeJS", image: "/public/images/icons/nodejs-original.svg" },
@@ -70,6 +66,10 @@ export const generalSkills: Array<Skill> = [
   // DevOps & Tools
   { name: "Docker", image: "/public/images/icons/docker-original.svg" },
   { name: "GitHub", image: "/public/images/icons/github-original.svg" },
+  {
+    name: "TailwindCSS",
+    image: "/public/images/icons/tailwindcss-original.svg",
+  },
 
   // API & Testing
   { name: "Jest", image: "/public/images/icons/jest-plain.svg" },

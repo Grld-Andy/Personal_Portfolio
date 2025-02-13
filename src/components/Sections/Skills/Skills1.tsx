@@ -11,7 +11,22 @@ const Skills: React.FC = () => {
         <SectionHeader text="MY SKILLS" />
         <SectionSubHeader text="VIEW MY TECH STACK" />
         <div className="flex justify-center gap-5 mb-5 flex-wrap">
-          {generalSkills.map((skill, index) => (
+          {generalSkills.slice(0, 4).map((skill, index) => (
+            <SkillCell skill={skill} key={index} />
+          ))}
+        </div>
+        <div className="flex justify-center gap-5 mb-5 flex-wrap">
+          {generalSkills.slice(4, 9).map((skill, index) => (
+            <SkillCell skill={skill} key={index} />
+          ))}
+        </div>
+        <div className="flex justify-center gap-5 mb-5 flex-wrap">
+          {generalSkills.slice(9, 12).map((skill, index) => (
+            <SkillCell skill={skill} key={index} />
+          ))}
+        </div>
+        <div className="flex justify-center gap-5 mb-5 flex-wrap">
+          {generalSkills.slice(12).map((skill, index) => (
             <SkillCell skill={skill} key={index} />
           ))}
         </div>
