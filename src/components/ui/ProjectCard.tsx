@@ -10,7 +10,7 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
-    <div className="w-full h-full px-7">
+    <div className="w-full h-full flex flex-col items-center sm:block">
       <TiltedCard
         imageSrc={project.image}
         altText={project.name}
@@ -25,7 +25,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         showTooltip={true}
         displayOverlayContent={true}
         overlayContent={
-          <p className="relative top-2 left-2 ">
+          <p className="relative top-2 left-2">
             {project.techStack.map((stack, index) => (
               <img
                 key={index}
@@ -36,23 +36,25 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           </p>
         }
       />
-      <div className="mt-2 flex flex-col gap-3">
-        <h1 className="text-[1.3em] font-semibold leading-[1em]">
-          {project.name}
-        </h1>
-        <p className="text-[#aaa] leading-[1em]">{project.description}</p>
-      </div>
-      <div className="flex gap-1 flex-wrap mt-2 items-center">
-        {project.github && (
-          <a href={project.github} target="_blank">
-            <GitHubIcon />
-          </a>
-        )}
-        {project.website && (
-          <a href={project.website} target="_blank">
-            <LanguageIcon />
-          </a>
-        )}
+      <div className="mt-2 w-[300px]">
+        <div className="flex flex-col gap-3">
+          <h1 className="text-[1.3em] font-semibold leading-[1em]">
+            {project.name}
+          </h1>
+          <p className="text-[#aaa] leading-[1em]">{project.description}</p>
+        </div>
+        <div className="flex gap-1 flex-wrap mt-2 items-center">
+          {project.github && (
+            <a href={project.github} target="_blank">
+              <GitHubIcon />
+            </a>
+          )}
+          {project.website && (
+            <a href={project.website} target="_blank">
+              <LanguageIcon />
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

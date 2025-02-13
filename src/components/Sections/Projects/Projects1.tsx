@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
       className="relative w-full bg-white text-black px-5 py-3 mt-36"
     >
       <SectionHeader text="MY PROJECTS" />
-      <SectionSubHeader text="PROJECTS WORKED ON" />
+      <SectionSubHeader text="BRINGING IDEAS TO LIFE" />
       <div className="flex justify-end gap-5 mb-5 flex-wrap">
         {buttons.map((button, index) => (
           <button
