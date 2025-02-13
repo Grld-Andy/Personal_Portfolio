@@ -16,7 +16,7 @@ const JourneyOdd: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="w-full bg-red-500 h-full col-start-2"></div>
+      <div className="w-full bg-black/50 h-full col-start-2"></div>
       <div
         className={`overflow-hidden py-5 px-2 flex items-center justify-start`}
       >

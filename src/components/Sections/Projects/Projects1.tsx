@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}

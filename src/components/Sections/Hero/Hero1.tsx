@@ -18,7 +18,7 @@ const Hero1: React.FC = () => {
     <>
       <section
         id="intro"
-        className="relative w-full grid grid-cols-[repeat(2,1fr)] items-center h-[calc(100vh-130px)] bg-white text-black px-5"
+        className="relative grid grid-cols-[repeat(2,1fr)] items-center h-[calc(100vh-130px)] bg-white text-black px-5"
       >
         <div className="flex flex-col gap-10 items-center">
           <div className="flex font-bold text-5xl">

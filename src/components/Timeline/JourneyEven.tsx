@@ -13,7 +13,7 @@ const JourneyEven: React.FC = () => {
           />
         </div>
       </div>
-      <div className="w-full bg-red-500 h-full col-start-2"></div>
+      <div className="w-full bg-black/50 h-full col-start-2"></div>
       <div className="max-w-[400px] pt-5">
         <h1 className="font-semibold text-2xl pl-5">Journey Point</h1>
         <p className="pl-5 text-left text-[0.9em]">

@@ -1,6 +1,8 @@
 import React from "react";
 import Project from "../../types/Project";
 import TiltedCard from "./TiltedCard/TiltedCard";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from "@mui/icons-material/Language";
 
 interface Props {
   project: Project;
@@ -34,13 +36,6 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           </p>
         }
       />
-      {/* {project.techStack.map((stack, index) => (
-        <img
-          key={index}
-          src={stack}
-          className="w-[30px] h-[30px] cursor-pointer"
-        />
-      ))} */}
       <div className="mt-2 flex flex-col gap-3">
         <h1 className="text-[1.3em] font-semibold leading-[1em]">
           {project.name}
@@ -53,20 +48,12 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
       <div className="flex gap-1 flex-wrap mt-2 items-center">
         {project.github && (
           <a href={project.github} target="_blank">
-            <img
-              className="w-[30px] h-[30px]"
-              src="/images/icons/github-60.png"
-              alt={project.name}
-            />
+            <GitHubIcon title="View on github" />
           </a>
         )}
         {project.website && (
           <a href={project.website} target="_blank">
-            <img
-              className="w-[25px] h-[25px]"
-              src="/images/icons/website-50.png"
-              alt={project.name}
-            />
+            <LanguageIcon />
           </a>
         )}
       </div>
