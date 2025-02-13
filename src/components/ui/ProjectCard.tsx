@@ -10,7 +10,7 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full px-7">
       <TiltedCard
         imageSrc={project.image}
         altText={project.name}
@@ -40,15 +40,12 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         <h1 className="text-[1.3em] font-semibold leading-[1em]">
           {project.name}
         </h1>
-        <p className="text-[#aaa] leading-[1em]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-          fugiat.
-        </p>
+        <p className="text-[#aaa] leading-[1em]">{project.description}</p>
       </div>
       <div className="flex gap-1 flex-wrap mt-2 items-center">
         {project.github && (
           <a href={project.github} target="_blank">
-            <GitHubIcon title="View on github" />
+            <GitHubIcon />
           </a>
         )}
         {project.website && (

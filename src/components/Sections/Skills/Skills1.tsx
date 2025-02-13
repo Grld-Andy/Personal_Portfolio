@@ -1,5 +1,5 @@
 import React from "react";
-import { skills } from "../../../constants/skills";
+import { generalSkills, skills } from "../../../constants/skills";
 import SectionHeader from "../../ui/SectionHeader";
 import SectionSubHeader from "../../ui/SectionSubHeader";
 import SkillCell from "../../ui/SkillCell";
@@ -11,7 +11,7 @@ const Skills: React.FC = () => {
         <SectionHeader text="MY SKILLS" />
         <SectionSubHeader text="VIEW MY TECH STACK" />
         <div className="flex justify-center gap-5 mb-5 flex-wrap">
-          {skills.map((skill, index) => (
+          {generalSkills.map((skill, index) => (
             <SkillCell skill={skill} key={index} />
           ))}
         </div>

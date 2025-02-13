@@ -10,6 +10,10 @@ export const skills: Array<Skill> = [
   { name: "ElectronJS", image: "/public/images/icons/electron-original.svg" },
   { name: "HTML5", image: "/public/images/icons/html5-original.svg" },
   { name: "CSS3", image: "/public/images/icons/css3-original.svg" },
+  {
+    name: "TailwindCSS",
+    image: "/public/images/icons/tailwindcss-original.svg",
+  },
 
   // Backend Technologies
   { name: "NodeJS", image: "/public/images/icons/nodejs-original.svg" },
@@ -38,10 +42,35 @@ export const skills: Array<Skill> = [
   // Testing
   { name: "Jest", image: "/public/images/icons/jest-plain.svg" },
   { name: "Playwright", image: "/public/images/icons/playwright-original.svg" },
+];
 
-  // Additional Skills I Added
-  { name: "GraphQL", image: "/public/images/icons/graphql-original.svg" }, // Modern API query language
-  { name: "Prisma", image: "/public/images/icons/prisma-original.svg" }, // ORM for Node.js
-  { name: "Terraform", image: "/public/images/icons/terraform-original.svg" }, // Infrastructure as Code
-  { name: "Kubernetes", image: "/public/images/icons/kubernetes-original.svg" }, // Container orchestration
+export const generalSkills: Array<Skill> = [
+  // Frontend
+  { name: "JavaScript", image: "/public/images/icons/javascript-original.svg" },
+  { name: "TypeScript", image: "/public/images/icons/typescript-original.svg" },
+  { name: "React", image: "/public/images/icons/react-original.svg" },
+  { name: "NextJS", image: "/public/images/icons/nextjs-original.svg" },
+  {
+    name: "TailwindCSS",
+    image: "/public/images/icons/tailwindcss-original.svg",
+  },
+
+  // Backend
+  { name: "NodeJS", image: "/public/images/icons/nodejs-original.svg" },
+  { name: "NestJS", image: "/public/images/icons/nestjs-original.svg" },
+  { name: "Python", image: "/public/images/icons/python-original.svg" },
+  { name: "ExpressJS", image: "/public/images/icons/express-original.svg" },
+  { name: "Django", image: "/public/images/icons/django-plain.svg" },
+
+  // Databases
+  { name: "PostgreSQL", image: "/public/images/icons/postgresql-original.svg" },
+  { name: "MongoDB", image: "/public/images/icons/mongodb-original.svg" },
+  { name: "Redis", image: "/public/images/icons/redis-original.svg" },
+
+  // DevOps & Tools
+  { name: "Docker", image: "/public/images/icons/docker-original.svg" },
+  { name: "GitHub", image: "/public/images/icons/github-original.svg" },
+
+  // API & Testing
+  { name: "Jest", image: "/public/images/icons/jest-plain.svg" },
 ];
