@@ -65,7 +65,7 @@ export const generalSkills: Array<Skill> = [
 
   // DevOps & Tools
   { name: "Docker", image: "/public/images/icons/docker-original.svg" },
-  { name: "GitHub", image: "/public/images/icons/github-original.svg" },
+  { name: "Git", image: "/public/images/icons/git-original.svg" },
   {
     name: "TailwindCSS",
     image: "/public/images/icons/tailwindcss-original.svg",
