@@ -1,5 +1,5 @@
 import React from "react";
-import { generalSkills, skills } from "../../../constants/skills";
+import { generalSkills } from "../../../constants/skills";
 import SectionHeader from "../../ui/SectionHeader";
 import SectionSubHeader from "../../ui/SectionSubHeader";
 import SkillCell from "../../ui/SkillCell";
