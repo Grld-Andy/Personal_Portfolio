@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
         </AnimatePresence>
       </div>
       <div className="absolute w-full left-0 bottom-[-150px]">
-        <img src="/public/svgs/waves1.svg" className="w-full" />
+        <img src="/svgs/waves1.svg" className="w-full" />
       </div>
     </div>
   );
