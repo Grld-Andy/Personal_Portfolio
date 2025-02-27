@@ -1,165 +1,85 @@
-.light_mode{
-  --font_color: black;
-  --bg_color: white;
-  --bg_color_2: #eee;
-  --font_opp_color: #666;
-  --font_sim_color: #aaa;
-  --section_header_size: 40px;
-}
-.dark_mode{
-  --font_color: white;
-  --bg_color: black;
-  --bg_color_2: #222;
-  --font_opp_color: #bbb;
-  --font_sim_color: #666;
-  --section_header_size: 40px;
-}
-
-*{
-  padding: 0;
-  margin: 0;
-  color: var(--font_color);
+* {
   scroll-behavior: smooth;
-  transition: .3s ease-in;
-}
-#root{
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-header{
-  width: 100vw;
-  min-height: 100vh;
-  background-color: var(--bg_color);
+/* fonts */
+@font-face {
+  font-family: "Rubik";
+  src: url("./assets/fonts/Rubik/Rubik-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-a{
-  text-decoration: none;
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/Nunito/Nunito-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-.navigation{
-  height: 60px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px 0;
-  width: 100vw;
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("./assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-.navigation ul li{
-  list-style: none;
-  display: inline;
-  padding: 0 10px;
+@font-face {
+  font-family: "Caveat";
+  src: url("./assets/fonts/Caveat/Caveat-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-.navigation h1 span, #greeting{
-  color: var(--font_opp_color)
+@font-face {
+  font-family: "Oregano";
+  src: url("./assets/fonts/Oregano/Oregano-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-.navigation ul li a{
-  color: var(--font_color);
+
+.rubik {
+  font-family: "Rubik", sans-serif;
 }
-.navigation h1{
-  font-size: 1.4em;
+.nunito {
+  font-family: "Nunito", sans-serif;
 }
-.navigation #theme{
-  background-color: var(--font_color);
-  color: var(--bg_color);
-  padding: 3px 5px;
-  border-radius: 20px;
-  cursor: pointer;
+.libreBaskerville {
+  font-family: "LibreBaskerville", sans-serif;
 }
-.navigation #theme span{
-  color: var(--bg_color);
+.caveat {
+  font-family: "Caveat", sans-serif;
 }
-.navigation ul br{
-  display: none;
+.oregano {
+  font-family: "Oregano", sans-serif;
 }
-@media (max-width: 720px) {
-  .navigation ul{
-    display: block;
-    text-align: right;
+
+.to-left {
+  grid-column: 1/2;
+}
+.to-middel {
+  grid-column: 2/3;
+}
+.to-right {
+  grid-column: 3/4;
+}
+
+/* animations */
+@keyframes rotateBackForth {
+  0% {
+    transform: rotate(0deg);
   }
-  .navigation ul li{
-    padding: 0 5px;
+  50% {
+    transform: rotate(45deg);
   }
-  .navigation #theme{
-    position: relative;
-    top: 3px;
-    padding: 2px 3px;
-  }
-  .navigation #theme span{
-    display: none;
-  }
-  .navigation ul br{
-    display: block;
-  }
-}
-.hero{
-  display: flex;
-  width: 100vw;
-  height: calc(100vh - 60px);
-  align-items: center;
-}
-.hero .grid{
-  display: flex;
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  gap: 50px;
-  align-items: center;
-}
-.hero .grid .col .circle{
-  width: 270px;
-  height: 270px;
-  overflow: hidden;
-  border-radius: 50%;
-  box-shadow: 0 0 4px var(--font_color);
-}
-.hero .grid .lottie{
-  position: relative;
-  bottom: 100px;
-}
-.hero .grid .col{
-  text-align: center;
-  font-size: 1.1em;
-}
-.hero .grid .col{
-  h1{
-    font-size: 2.7em;
-  }
-  p{
-    font-size: 2em;
-  }
-  #prof{
-    font-size: 1.5em;
+  100% {
+    transform: rotate(0deg);
   }
 }
-.hero .grid .col p{
-  font-weight: 400;
-}
-.hero .grid .col #prof{
-  font-weight: 600;
-  height: 25px;
-  color: var(--font_light_color);
-}
-.links1{
-  position: relative;
-  top: 15px;
-}
-.space{
-  padding: 0 5px;
-  display: inline;
-}
-@media (max-width: 720px){
-  .hero .grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-  }
-  .hero .grid .col:first-child{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
+.back-and-forth {
+  display: inline-block;
+  animation: rotateBackForth 2s ease-in-out infinite;
+  animation-delay: 5s;
 }
