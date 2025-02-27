@@ -3,12 +3,11 @@ import Project from "../types/Project";
 const projects: Array<Project> = [
   {
     id: 1,
-    name: "Loan Management System",
+    name: "LoanIt",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, fugiat.",
     image: "/images/projects/loan_manage.png",
-    website: "askdf",
-    github: "askdf;a",
+    github: "https://github.com/Grld-Andy/LoanIt",
     techStack: [
       "/images/icons/django-plain.svg",
       "/images/icons/python-original.svg",
@@ -19,11 +18,11 @@ const projects: Array<Project> = [
   },
   {
     id: 2,
-    name: "Online Book Shop",
+    name: "BookLet",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, fugiat.",
     image: "/images/projects/book_shop.png",
-    github: "askdf;a",
+    github: "https://github.com/Grld-Andy/BookLet",
     techStack: [
       "/images/icons/html5-original.svg",
       "/images/icons/css3-original.svg",
