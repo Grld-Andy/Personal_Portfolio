@@ -10,7 +10,7 @@ const Experience: React.FC = () => {
   return (
     <div id="experience" className="w-full text-black mt-30 px-5">
       <SectionHeader text="My Journey" />
-      <SectionSubHeader text="Place cool text here" />
+      <SectionSubHeader text="Exploring, learning, and building" />
       <div className="text-center my-10">
         {experiences.map((experience, index) => (
           <motion.div

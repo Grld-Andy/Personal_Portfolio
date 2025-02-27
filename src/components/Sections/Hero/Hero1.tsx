@@ -48,12 +48,10 @@ const Hero1: React.FC = () => {
             className="text-[#333] text-[18px]"
           >
             <p className="">
-              Just another{" "}
-              <span className="font-bold text-blue-500">
-                computer science student.
-              </span>
+              Passionate about building scalable software solutions.{" "}
+              <span className="font-bold text-blue-500">Web developer</span>{" "}
+              skilled in NodeJS, Django, and modern web technologies.
               <br />
-              Currently in School🎓
             </p>
             <p>Welcome to my portfolio.</p>
           </motion.div>
