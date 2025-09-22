@@ -18,7 +18,7 @@ export const skills: Array<Skill> = [
   // Backend Technologies
   { name: "NodeJS", image: "/images/icons/nodejs-original.svg" },
   { name: "ExpressJS", image: "/images/icons/express-original.svg" },
-  { name: "NestJS", image: "/images/icons/nestjs-original.svg" },
+  { name: ".NET", image: "/images/icons/dotnet-original.svg" },
   { name: "Django", image: "/images/icons/django-plain.svg" },
   { name: "Python", image: "/images/icons/python-original.svg" },
   { name: "Socket.IO", image: "/images/icons/socketio-original.svg" },
@@ -53,7 +53,7 @@ export const generalSkills: Array<Skill> = [
 
   // Backend
   { name: "NodeJS", image: "/images/icons/nodejs-original.svg" },
-  { name: "NestJS", image: "/images/icons/nestjs-original.svg" },
+  { name: ".NET", image: "/images/icons/dotnetcore-original.svg" },
   { name: "Python", image: "/images/icons/python-original.svg" },
   { name: "ExpressJS", image: "/images/icons/express-original.svg" },
   { name: "Django", image: "/images/icons/django-plain.svg" },
