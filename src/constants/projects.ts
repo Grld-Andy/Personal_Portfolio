@@ -17,6 +17,20 @@ const projects: Array<Project> = [
     tag: "Work",
   },
   {
+    id: 10,
+    name: "MultiPost",
+    description:
+      "Create, plan, and publish your content across all your social media accounts from one platform.",
+    image: "/images/projects/multipost.png",
+    github: "https://github.com/Grld-Andy/MultiPost-Studio",
+    techStack: [
+      "/images/icons/nextjs-original.svg",
+      "/images/icons/typescript-original.svg",
+      "/images/icons/tailwindcss-original.svg",
+    ],
+    tag: "Personal",
+  },
+  {
     id: 1,
     name: "LoanIt",
     description:
