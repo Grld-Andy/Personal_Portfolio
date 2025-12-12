@@ -23,6 +23,7 @@ const projects: Array<Project> = [
       "Create, plan, and publish your content across all your social media accounts from one platform.",
     image: "/images/projects/multipost.png",
     github: "https://github.com/Grld-Andy/MultiPost-Studio",
+    website: "https://multi-post-studio.vercel.app/",
     techStack: [
       "/images/icons/nextjs-original.svg",
       "/images/icons/typescript-original.svg",
