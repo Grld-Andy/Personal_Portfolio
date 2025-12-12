@@ -26,6 +26,7 @@ const projects: Array<Project> = [
     website: "https://multi-post-studio.vercel.app/",
     techStack: [
       "/images/icons/nextjs-original.svg",
+      "/images/icons/framermotion-original.svg",
       "/images/icons/typescript-original.svg",
       "/images/icons/tailwindcss-original.svg",
     ],
