@@ -3,8 +3,8 @@ import SectionHeader from "../../ui/SectionHeader";
 import SectionSubHeader from "../../ui/SectionSubHeader";
 import experiences from "../../../constants/experience";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { motion } from "framer-motion";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Experience: React.FC = () => {
   return (
