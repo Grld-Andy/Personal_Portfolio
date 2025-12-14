@@ -30,7 +30,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
               <img
                 key={index}
                 src={stack}
-                className="w-[30px] h-[30px] cursor-pointer"
+              className={`w-[30px] h-[30px] cursor-pointer ${stack.includes('framer') ? 'bg-white/30 py-[1px] rounded-lg' : ''}`}
               />
             ))}
           </p>
