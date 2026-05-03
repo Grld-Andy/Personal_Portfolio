@@ -17,7 +17,7 @@ const Navbar1: React.FC = () => {
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
-          <a href="#about-me">About_Me</a>
+          <a href="https://drive.google.com/file/d/17m9RLD-5kRgefu7fidiTvWhTF7Nh6dul/view?usp=drive_link">Resume</a>
         </div>
       </div>
     </motion.nav>

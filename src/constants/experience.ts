@@ -37,6 +37,15 @@ const experiences: Array<Experience> = [
     date: "22nd October, 2024 - 20th December, 2024",
     logo: "/images/experiences/scynett-logo.png",
   },
+  {
+    name: "Persol Systems Limited",
+    position: "Backend Engineer",
+    location: "Ghana, Greater Accra Region, Airport Residential",
+    description:
+      "Leading the design and development of scalable backend systems using C# and .NET. Architected a modular monolith and implemented CQRS to improve performance and maintainability. Optimized APIs and database performance through query tuning, indexing, and refactoring legacy logic.",
+    date: "January 2026 - Present",
+    logo: "/images/experiences/logo-persol-systems-limited.png",
+  },
 ];
 
 export default experiences.reverse();
