@@ -6,7 +6,7 @@ const experiences: Array<Experience> = [
     position: "B.Sc. Computer Science and Engineering",
     location: "Ghana, Western Region, Tarkwa",
     description:
-      "Completed a Bachelor's degree in Computer Science and Engineering, covering data structures and algorithms, database systems, web development, and object-oriented programming. Built hands-on projects across backend, desktop, and web domains throughout the programme.",
+      "Studied Computer Science and Engineering with a focus on algorithms, databases, and software design. Spent most of the programme building real projects across backend, desktop, and web.",
     date: "Jan 2020 - Sep 2025",
     logo: "/images/experiences/umat-logo.png",
   },
@@ -15,7 +15,7 @@ const experiences: Array<Experience> = [
     position: "Backend Engineer",
     location: "Ghana, Greater Accra Region, Airport Residential",
     description:
-      "Worked on enterprise .NET applications alongside senior engineers, contributing to feature development, testing, and performance optimization across production codebases.",
+      "Contributed to feature development and performance improvements on enterprise .NET applications, working closely with senior engineers on production-grade code.",
     date: "Sep 2023 - Dec 2023",
     logo: "/images/experiences/logo-persol-systems-limited.png",
   },
@@ -24,7 +24,7 @@ const experiences: Array<Experience> = [
     position: "Backend Engineer",
     location: "Ghana, Greater Accra Region, Tema Highway",
     description:
-      "Built REST APIs in TypeScript with Express and PostgreSQL, covering auth, data validation, and error handling from scratch. Added MongoDB for document storage and set up Redis caching to reduce database load on frequently hit endpoints. Wrote Swagger documentation and end-to-end tests to give the team a reliable API contract and speed up onboarding.",
+      "Developed TypeScript REST APIs with Express and PostgreSQL from the ground up, integrating MongoDB, Redis caching, and writing end-to-end tests and Swagger docs to keep the API stable and easy to work with.",
     date: "Sep 2024 - Oct 2024",
     logo: "/images/experiences/amalitech-logo.jpg",
   },
@@ -33,7 +33,7 @@ const experiences: Array<Experience> = [
     position: "Backend Engineer",
     location: "Remote",
     description:
-      "Developed and maintained REST APIs in C# .NET Core with a focus on clean, testable code using SOLID principles. Wrote unit and integration tests that caught regressions early and gave the team confidence when shipping changes. Improved MS SQL Server query performance and schema design, resolving long-standing slowness in key data retrieval paths.",
+      "Built and maintained C# .NET Core APIs with an emphasis on testability and clean code. Improved query performance and database schema design, which cleared up slowness that had been sitting in the codebase for a while.",
     date: "Oct 2024 - Dec 2024",
     logo: "/images/experiences/scynett-logo.png",
   },
@@ -42,7 +42,7 @@ const experiences: Array<Experience> = [
     position: "Backend Engineer",
     location: "Ghana, Greater Accra Region, Airport Residential",
     description:
-      "Built and maintained backend features across TypeScript (Node.js) and C# .NET services on the same production codebase. Refactored a monolithic service into loosely coupled modules using CQRS, making individual features easier to test and extend without touching unrelated code. Reduced API response times by roughly 40% across several endpoints by tuning slow queries, adding targeted indexes, and cleaning up legacy database logic.",
+      "Work across TypeScript and C# .NET services on the same production codebase. Broke apart a monolith into independently testable modules using CQRS, and brought API response times down considerably through query tuning, indexing, and cleaning up legacy server side logic.",
     date: "Jan 2026 - Present",
     logo: "/images/experiences/logo-persol-systems-limited.png",
   },
