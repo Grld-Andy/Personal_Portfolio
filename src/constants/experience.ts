@@ -7,7 +7,7 @@ const experiences: Array<Experience> = [
     location: "Ghana, Western Region, Tarkwa",
     description:
       "Studied Computer Science and Engineering with a focus on algorithms, databases, and software design. Spent most of the programme building real projects across backend, desktop, and web.",
-    date: "Jan 2020 - Sep 2025",
+    date: "Jan 2021 - Sep 2025",
     logo: "/images/experiences/umat-logo.png",
   },
   {
